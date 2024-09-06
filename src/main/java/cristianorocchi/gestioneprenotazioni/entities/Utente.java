@@ -19,15 +19,17 @@ public class Utente {
     private Long id;
 
     private String username;
-    private String nomeCompleto;
+    private String nome;
+    private String surname;
     private String email;
 
     @OneToMany(mappedBy = "utente", cascade = CascadeType.ALL)
     private List<Prenotazione> prenotazioni;
 
-    public Utente(String username, String nomeCompleto, String email) {
+    public Utente(String username, String nome, String surname, String email) {
         this.username = username;
-        this.nomeCompleto = nomeCompleto;
+        this.nome = nome;
+        this.surname = surname;
         this.email = email;
     }
 }
