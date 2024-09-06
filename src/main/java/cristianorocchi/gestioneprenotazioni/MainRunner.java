@@ -29,7 +29,7 @@ public class MainRunner implements CommandLineRunner {
     public void run(String... args) throws Exception {
         /* EDIFICI */
         Edificio edificio1 = new Edificio("Edificio A", "Via Roma 1", "Milano");
-        Edificio edificio2 = new Edificio("Edificio B", "Via Milano 5", "Torino");
+        Edificio edificio2 = new Edificio("Edificio B", "Via Milano 2", "Roma");
         edificioService.saveEdificio(edificio1);
         edificioService.saveEdificio(edificio2);
 

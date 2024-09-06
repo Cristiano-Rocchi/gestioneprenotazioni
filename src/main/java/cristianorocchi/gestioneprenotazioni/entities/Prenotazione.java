@@ -7,7 +7,7 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "Prenotazione")
-@Getter
+
 @Setter
 @ToString
 @NoArgsConstructor
@@ -33,6 +33,39 @@ public class Prenotazione {
         this.utente = utente;
         this.postazione = postazione;
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public LocalDate getDataPrenotazione() {
+        return dataPrenotazione;
+    }
+
+    public void setDataPrenotazione(LocalDate dataPrenotazione) {
+        this.dataPrenotazione = dataPrenotazione;
+    }
+
+    public Utente getUtente() {
+        return utente;
+    }
+
+    public void setUtente(Utente utente) {
+        this.utente = utente;
+    }
+
+    public Postazione getPostazione() {
+        return postazione;
+    }
+
+    public void setPostazione(Postazione postazione) {
+        this.postazione = postazione;
+    }
+
 }
 
 
