@@ -29,5 +29,5 @@ public class UtenteService {
         utenteRepository.deleteById(id);
     }
 
-    
+
 }
